@@ -9,6 +9,7 @@ services:
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
+    user: "${UID}:${GID}"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./data/prometheus:/prometheus
@@ -19,6 +20,7 @@ services:
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
+    user: "${UID}:${GID}"
     volumes:
       - ./data/grafana:/var/lib/grafana
     ports:
