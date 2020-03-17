@@ -7,7 +7,7 @@ docker-compose file for using Nature Remo, Prometheus, Grafana and Nginx.
 ## Usage
 
 Get nature remo auth token.
-https://api.nature.global/login
+https://home.nature.global/
 
 ```sh
 $ git clone https://github.com/yoshiori/remo-prometheus-grafana-nginx.git
